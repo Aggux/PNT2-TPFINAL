@@ -138,6 +138,7 @@ export default {
         return;
       }
 
+      localStorage.setItem('session', 'active'); // Guardar la sesión en localStorage
       this.success = true;
       this.successMessage = "Inicio de sesión exitoso";
       this.$router.push('/navbar'); // Redirigir a Navbar.vue

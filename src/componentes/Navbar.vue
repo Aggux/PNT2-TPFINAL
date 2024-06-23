@@ -8,9 +8,14 @@
       <v-app-bar-title>McORT</v-app-bar-title>
 
       <template v-slot:append>
-        <v-btn icon="mdi-tag-outline" @click="changeView('cuponesGuardados')"></v-btn>
+        <v-btn 
+          v-if="isSessionActive"
+          icon="mdi-tag-outline"
+          @click="changeView('cuponesGuardados')"
+        ></v-btn>
         <v-btn icon @click="logout">
-          <v-icon>mdi-export</v-icon>
+          <v-icon v-if="isSessionActive">mdi-export</v-icon>
+          <v-icon v-else>mdi-account</v-icon>
         </v-btn>
       </template>
     </v-app-bar>
@@ -35,11 +40,11 @@
   </div>
 </template>
 
+
 <script>
 import Home from './Home.vue'
 import Productos from './Productos.vue'
 import Promociones from './Promociones.vue'
-import Configuracion from './Configuracion.vue'
 import CuponesGuardados from './CuponesGuardados.vue'
 
 export default {
@@ -48,13 +53,13 @@ export default {
     Home,
     Productos,
     Promociones,
-    Configuracion,
     CuponesGuardados
   },
-  data () {
+  data() {
     return {
       drawer: false,
       currentView: 'inicio',
+      isSessionActive: false, // Esta propiedad determina si hay una sesión activa
       items: [
         {
           title: 'Inicio',
@@ -68,27 +73,21 @@ export default {
           title: 'Promociones',
           value: 'promociones',
         },
-        {
-          title: 'Configuracion',
-          value: 'configuracion',
-        },
       ],
-    }
+    };
   },
   computed: {
     currentViewComponent() {
       switch (this.currentView) {
         case 'productos':
-          return 'Productos'
+          return 'Productos';
         case 'promociones':
-          return 'Promociones'
-        case 'configuracion':
-          return 'Configuracion'
+          return 'Promociones';
         case 'cuponesGuardados':
-          return 'CuponesGuardados'
+          return 'CuponesGuardados';
         case 'inicio':
         default:
-          return 'Home'
+          return 'Home';
       }
     }
   },
@@ -98,10 +97,20 @@ export default {
       this.drawer = false;
     },
     logout() {
-      this.$router.push('/login');
+      // Aquí puedes añadir la lógica para cerrar la sesión si está activa
+      if (this.isSessionActive) {
+        // Lógica para cerrar sesión
+        localStorage.removeItem('session'); // Ejemplo de cómo cerrar sesión
+        this.isSessionActive = false;
+      }
+      this.$router.push('/login'); // Redirige a la vista de login
     }
+  },
+  mounted() {
+    // Aquí podrías verificar si hay una sesión activa y actualizar la propiedad `isSessionActive`
+    this.isSessionActive = !!localStorage.getItem('session'); // Ejemplo: verifica si hay una sesión en localStorage
   }
-}
+};
 </script>
 
 <style scoped lang="css">
