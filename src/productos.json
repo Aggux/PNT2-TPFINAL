@@ -9,70 +9,70 @@
     "2":{
         "titulo": "Doble Cuarto de Libra con Queso",
         "kcal": 771,
-        "imagen": "https://imgur.com/R7hbi7r",
+        "imagen": "https://i.imgur.com/R7hbi7r.png",
         "contenido": "Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.",
         "show": false
     },
     "3":{
         "titulo": "McNífica",
         "kcal": 513,
-        "imagen": "https://imgur.com/nlKPxyK",
+        "imagen": "https://i.imgur.com/nlKPxyK.png",
         "contenido": "En un mundo donde todos buscan lo nuevo todo el tiempo, la McNífica viene a rectificar lo bueno de ser clásico. Carne, queso cheddar, tomate, lechuga y cebolla, acompañados de kétchup, mostaza y mayonesa.",
         "show": false
     },
     "4":{
         "titulo": "McCrispy Chicken Smoked BBQ",
         "kcal": 500,
-        "imagen": "https://imgur.com/YyjONVg",
+        "imagen": "https://i.imgur.com/YyjONVg.png",
         "contenido": "El más rico y crujiente pollo crispy, cebolla grillada y una deliciosa salsa Barbacoa acompañado con pan de papa.",
         "show": false
     },
     "5":{
         "titulo": "McNuggets 10 unidades",
         "kcal": 397,
-        "imagen": "https://imgur.com/GqsmIUI",
+        "imagen": "https://i.imgur.com/GqsmIUI.png",
         "contenido": "Diez piezas del mejor pollo rebozado. Para comerlas con salsas o solas; todas son igual de deliciosas!",
         "show": false
     },
     "6":{
         "titulo": "Ensalada Caesar con Pollo Grillé",
         "kcal": 730,
-        "imagen": "https://imgur.com/Tlc3fmk",
+        "imagen": "https://i.imgur.com/Tlc3fmk.png",
         "contenido": "Ensalada de mix de hojas verdes, queso parmesano en hebras, bacon picado, croutons y pollo grillé. Con un exquisito adherezo caesar.",
         "show": false
     },
     "7":{
         "titulo": "Papas Medianas",
         "kcal": 292,
-        "imagen": "https://imgur.com/VzZgEjT",
+        "imagen": "https://i.imgur.com/VzZgEjT.png",
         "contenido": "Nuestro sello. Las aliadas perfectas para cualquier comida. Disfrutá de nuestras papas mundialmente famosas, desde la primera hasta la última. Crujientes y deliciosas, no vas a parar hasta terminarlas todas.",
         "show": false
     },
     "8":{
         "titulo": "Coca Cola Mediana",
         "kcal": 269,
-        "imagen": "https://imgur.com/i8UEJ7P",
+        "imagen": "https://i.imgur.com/i8UEJ7P.png",
         "contenido": "Burbujas contra el calor, contra la sed, contra el aburrimiento. Si tus comidas llevan gaseosa, están listas para enfrentar lo que sea, elegila en tamaño regular, mediano o grande.",
         "show": false
     },
     "9":{
         "titulo": "McFlurry Oreo",
         "kcal": 424,
-        "imagen": "https://imgur.com/m220khA",
+        "imagen": "https://i.imgur.com/m220khA.png",
         "contenido": "Un helado de vainilla que se banca compartir el protagonismo con trocitos de deliciosas galletitas Oreo y la salsa que elijas. Amalo hasta el final.",
         "show": false
     },
     "10":{
         "titulo": "Sundae de Dulce de Leche",
         "kcal": 257,
-        "imagen": "https://imgur.com/DI72RSV",
+        "imagen": "https://i.imgur.com/DI72RSV.png",
         "contenido": "El exquisito helado de vainilla que ya conoces y te encanta, pero bañado de una salsa de dulce de leche que te encantará aún más.",
         "show": false
     },
     "11":{
         "titulo": "Milkshake Chocotorta",
         "kcal": 958.08,
-        "imagen": "https://imgur.com/wM9bqvG",
+        "imagen": "https://i.imgur.com/wM9bqvG.png",
         "contenido": "Bebida frozen con una base de vainilla, salsa Chocotorta, muchas Chocolinas, finalizado con crema de leche. ¡Una Chocotorta en forma de milkshake!",
         "show": false
     },

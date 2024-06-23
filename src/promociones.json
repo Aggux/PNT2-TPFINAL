@@ -2,56 +2,56 @@
   "1":{
       "titulo": "McCombo Big Mac",
       "precio":  "+ 1 sobre de Cartas",
-      "imagen": "https://imgur.com/HFtGBUJ",
+      "imagen": "https://i.imgur.com/HFtGBUJ.png",
       "contenido": "¡Aprovechá esta promo de los campeones del mundo! Llevate 1 sobre de cartas comprando un McCombo Mediano Big Mac",
       "show": false
     },
   "2":{
       "titulo": "McCombo Doble Cuarto de libra",
       "precio": "+ Pileta de Cheddar",
-      "imagen": "https://imgur.com/rOkvTQc",
+      "imagen": "https://i.imgur.com/rOkvTQc.png",
       "contenido": "Acompaña tu McCombo Favorito , con una explosión de cheddar",
       "show": false
     },
     "3":{
       "titulo": "3 McCombos medianos BigMac",
       "precio": "20% OFF",
-      "imagen": "https://imgur.com/R3Gt2Lx",
+      "imagen": "https://i.imgur.com/R3Gt2Lx.png",
       "contenido": "Hamburguesa con doble carne 100% vacuna, salsa Big Mac, queso derretido, cebolla, lechuga y pepino. Acompañamiento y bebida mediana a elección",
       "show": false
     },
     "4":{
       "titulo": "McCombo Pixel",
       "precio": 5999,
-      "imagen": "https://imgur.com/LCKA73T",
+      "imagen": "https://i.imgur.com/LCKA73T.png",
       "contenido": "Hamburguesa doble medallón de carne y doble queso condimentado con ketchup, mostaza y cebolla. Acompañamiento chico y bebida sin azúcar a elección. Postre Sundae, sabor a elección",
       "show": false
     },
     "5":{
       "titulo": "Menú Ensalada Caesar",
       "precio": 7599,
-      "imagen": "https://imgur.com/dPbRPbp",
+      "imagen": "https://i.imgur.com/dPbRPbp.png",
       "contenido": "Ensalada de mix de hojas verdes, queso parmesano en hebras, bacon picado, croutons y una proteína a elección. Con un exquisito aderezo caesar. Acompañada de una bebida a elección",
       "show": false
     },
     "6":{
       "titulo": "2 Sundae a elección",
       "precio": 3599,
-      "imagen": "https://imgur.com/kzBkYjF",
+      "imagen": "https://i.imgur.com/kzBkYjF.png",
       "contenido": "Podes elegir 2 sundae de Chocolate, Frutilla o Dulce de leche",
       "show": false
     },
     "7":{
       "titulo": "2 McFlurry Oreo",
       "precio": 6350,
-      "imagen": "https://imgur.com/p1FUiVr",
+      "imagen": "https://i.imgur.com/p1FUiVr.png",
       "contenido": "2 McFlurry Oreo, elegí tu helado y salsa",
       "show": false
     },
     "8":{
       "titulo": "Café con 1 medialuna",
       "precio": "Medialuna Gratis",
-      "imagen": "https://imgur.com/eWWg31C",
+      "imagen": "https://i.imgur.com/eWWg31C.png",
       "contenido": "Con la compra de un café, llevate gratis una medialuna",
       "show": false
     }
