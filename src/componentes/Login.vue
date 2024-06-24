@@ -42,6 +42,7 @@
 
 <script>
 import { getUsuarios, createUsuario } from "./servicios/usuarios";
+import { createCuponesGuardados } from "./servicios/cuponesGuardados"; 
 
 export default {
   data() {
@@ -118,6 +119,17 @@ export default {
       try {
         const data = await createUsuario(newUser);
         this.usuarios.push(data);
+
+       
+        const newCuponesGuardados = {
+          id: data.id, 
+          cupones: [] 
+        };
+        await createCuponesGuardados(newCuponesGuardados);
+
+        
+        localStorage.setItem('user', JSON.stringify({ id: data.id }));
+
         this.success = true;
         this.successMessage = "Usuario registrado con éxito";
         this.toggleMode();
@@ -138,10 +150,13 @@ export default {
         return;
       }
 
-      localStorage.setItem('session', 'active'); // Guardar la sesión en localStorage
+      
+      localStorage.setItem('session', 'active');
+      localStorage.setItem('user', JSON.stringify({ id: user.id }));
+
       this.success = true;
       this.successMessage = "Inicio de sesión exitoso";
-      this.$router.push('/navbar'); // Redirigir a Navbar.vue
+      this.$router.push('/navbar'); 
     }
   }
 };

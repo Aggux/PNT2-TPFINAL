@@ -60,7 +60,6 @@
 </template>
 
 <script>
-// Importa el JSON de productos
 import productosJSON from '@/productos.json';
 
 export default {
@@ -68,7 +67,7 @@ export default {
   data() {
     return {
       busqueda: '',
-      productos: {}, // Inicialmente vacío, se llenará con los datos del JSON
+      productos: {},
       productosFiltrados: {}
     };
   },
@@ -82,10 +81,8 @@ export default {
     filtrarProductos() {
       const textoBusqueda = this.busqueda.toLowerCase();
 
-      // Convert the object to an array, filter, then convert back to an object
       const resultadosFiltrados = Object.entries(this.productos).filter(([,producto]) => producto.titulo.toLowerCase().includes(textoBusqueda));
 
-      // Convert back to an object
       this.productosFiltrados = Object.fromEntries(resultadosFiltrados);
 
     }
@@ -96,9 +93,8 @@ export default {
     }
   },
   mounted() {
-    // Asigna los datos del JSON a this.productos
     this.productos = productosJSON;
-    this.productosFiltrados = this.productos; // Inicialmente muestra todos los productos
+    this.productosFiltrados = this.productos; 
   }
 };
 </script>

@@ -59,7 +59,7 @@ export default {
     return {
       drawer: false,
       currentView: 'inicio',
-      isSessionActive: false, // Esta propiedad determina si hay una sesión activa
+      isSessionActive: false, 
       items: [
         {
           title: 'Inicio',
@@ -99,16 +99,15 @@ export default {
     logout() {
       // Aquí puedes añadir la lógica para cerrar la sesión si está activa
       if (this.isSessionActive) {
-        // Lógica para cerrar sesión
-        localStorage.removeItem('session'); // Ejemplo de cómo cerrar sesión
+        
+        localStorage.removeItem('session'); 
         this.isSessionActive = false;
       }
-      this.$router.push('/login'); // Redirige a la vista de login
+      this.$router.push('/login');
     }
   },
   mounted() {
-    // Aquí podrías verificar si hay una sesión activa y actualizar la propiedad `isSessionActive`
-    this.isSessionActive = !!localStorage.getItem('session'); // Ejemplo: verifica si hay una sesión en localStorage
+    this.isSessionActive = !!localStorage.getItem('session'); 
   }
 };
 </script>
